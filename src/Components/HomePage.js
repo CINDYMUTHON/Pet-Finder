@@ -72,30 +72,15 @@ export default function HomePage() {
                             )}
 
                             <ul className="text-sm text-slate-400 leading-loose lg:text-base lg:leading-relaxed">
+                               
+                                
+                                
                                 <li>
-                                    <span className="font-bold text-slate-200">Bred For:</span>{" "}
-                                    {item.bred_for}
+                                    <span className="font-bold text-slate-200">Breed:</span>{" "}
+                                    {item.breed}
                                 </li>
-                                <li>
-                                    <span className="font-bold text-slate-200">Height:</span>{" "}
-                                    {item.height?.metric} cm
-                                </li>
-                                <li>
-                                    <span className="font-bold text-slate-200">Weight:</span>{" "}
-                                    {item.weight?.metric} kgs
-                                </li>
-                                <li>
-                                    <span className="font-bold text-slate-200">Breed Group:</span>{" "}
-                                    {item.breed_group}
-                                </li>
-                                <li>
-                                    <span className="font-bold text-slate-200">Lifespan:</span>{" "}
-                                    {item.life_span}
-                                </li>
-                                <li>
-                                    <span className="font-bold text-slate-200">Temperament:</span>{" "}
-                                    {item.temperament}
-                                </li>
+                                
+                        
                             </ul>
 
                             <Link
