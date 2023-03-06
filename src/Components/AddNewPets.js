@@ -24,9 +24,12 @@ function AddPet({ user_id }) {
     }
 
     if (displayForm === false) {
-        return <button className="btn bg-green-200 outlined"
+        return <><button className="btn bg-green-200 outlined"
             onClick={() => setdisplayForm(true)
             } >Add new pet</button>
+            
+            <a href="/pets">Back to pets</a>
+            </>
     } else {
         return <form onSubmit={handleSubmit} className="text-center m-20 w-1/2 auto">
             <input type="text" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Name" onChange={(e) => {
