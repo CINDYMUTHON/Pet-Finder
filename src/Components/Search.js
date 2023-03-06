@@ -6,7 +6,7 @@ function Search() {
     const pets = useStore(petskeeper)
     const handleSearch = (e) => {
         console.log(e.target.value)
-        axios.post("http://localhost:9292/pets/search", {
+        axios.get("http://localhost:9292/pets/search_all", {
             query: e.target.value
         }).then((r) =>
             pets.setPetsKeeper(r.data)
