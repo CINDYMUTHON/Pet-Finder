@@ -4,8 +4,10 @@ export default function LandingPage() {
     return (
         <header className= "LandingPage-body" style={ HeaderStyle }>
             <p className='p-32'></p>
-            <h1 className="main-title text-center">Welcome to Petfinder </h1>
-            <p className='p-5'></p>
+            <h1 className="main-title text-center text-black text-2xl">Welcome to Petfinder </h1>
+            <p className='p-2'></p>
+            <img style={{height:"100px", margin:"auto", borderRadius:"15px"}} src='https://classroomclipart.com/images/gallery/Clipart/Animals/Dog_Clipart/boy-holding-pet-cute-brown-dog-clipart.jpg'/>
+            <p className='p-2'></p>
 
             <p className="main-para text-center">
                 </p>
