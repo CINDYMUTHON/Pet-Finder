@@ -9,7 +9,7 @@ function Delete({ pet }) {
   })
   const handleDelete = () => {
     axios
-      .delete(`http://localhost:9292/pets/${pet.id}`)
+      .delete(`${API_URL}/pets/${pet.id}`)
       .then(() => pets.setPetsKeeper(other_pets));
   };
   return <button onClick={handleDelete} id="delete-btn"> Delete</button>;

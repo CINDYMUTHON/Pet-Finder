@@ -4,6 +4,7 @@ import Search from "./Search"
 import axios from "axios";
 import { useStore } from "zustand";
 import { petskeeper } from "../data/PetsKeeper";
+import { API_URL } from "../data/api";
 
 export default function HomePage() {
     const [dog, setDog] = useState([])
@@ -14,7 +15,7 @@ export default function HomePage() {
 
     const handleDelete = async (pet) => {
         axios
-            .delete(`http://localhost:9292/pets/${pet}`)
+            .delete(`${API_URL}/pets/${pet}`)
             .then(() => {
                 fetchSingleDogData()
             });
@@ -24,7 +25,7 @@ export default function HomePage() {
         try {
             console.log(name)
             const res = await fetch(
-                `http://localhost:9292/pets`
+                `${API_URL}/pets`
             )
             const data = await res.json()
             setDog(data)
@@ -72,15 +73,15 @@ export default function HomePage() {
                             )}
 
                             <ul className="text-sm text-slate-400 leading-loose lg:text-base lg:leading-relaxed">
-                               
-                                
-                                
+
+
+
                                 <li>
                                     <span className="font-bold text-slate-200">Breed:</span>{" "}
                                     {item.breed}
                                 </li>
-                                
-                        
+
+
                             </ul>
 
                             <Link
